@@ -18,8 +18,8 @@ public class BookController {
     public String getBooks(Model model) {
 
         model.addAttribute("books", bookRepository.findAll());
-        //Tells Controller which View to render
-        return "books";
+        //Tells Controller which View to look for --> templates.books.list
+        return "books/list";
     }
 
 }
